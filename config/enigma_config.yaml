@@ -1,0 +1,15 @@
+# Class names of the dataset (order matters)
+class_names: ["negative", "hand_take", "hand_release"]
+# Class names to exclude from the evaluation
+exclude_classes: ["negative"]
+fps: 5
+
+# temporal offset thresholds (in seconds). Used only for single test
+tOffset_thresholds: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
+
+# Parameters for the quasi-online action detection module. Used only for single test
+detection_params:
+  window_size: 10
+  inhibition_time: 0
+  sigma: 3
+  min_dist: 10
